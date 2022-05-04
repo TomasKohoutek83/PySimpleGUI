@@ -1,7 +1,14 @@
-import PySimpleGUI as pg
+import PySimpleGUI as sg
+import csv
+import os
 
-menu_def = [
-        ['File',['Open','Save','Exit']],
-        ['Edit',['Paste',['Special', 'Normal', ], 'Undo']],
-        ['Help','About...']
-            ]
+layout = [
+    [sg.Text('Chosse a CSV file:')],
+    [sg.InputText(key = '-FILE_PATH-'),
+    sg.FileBrowse(initial_folder = working_directory)]
+        ]
+
+
+
+
+
